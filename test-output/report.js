@@ -6,6 +6,10 @@ formatter.feature({
   "id": "facebook-login-feature",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 334839,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 3,
   "name": "Facebook Login Test Scenario",
@@ -15,17 +19,17 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "user is on Login Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "title of login page is Facebook",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "user enter username and password",
   "rows": [
     {
@@ -33,25 +37,25 @@ formatter.step({
         "username",
         "password"
       ],
-      "line": 8
+      "line": 9
     },
     {
       "cells": [
         "jayamishra850@gmail.com",
         "Ritu@123456"
       ],
-      "line": 9
+      "line": 10
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
+  "line": 12,
   "name": "user click on login button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
+  "line": 13,
   "name": "user on home page",
   "keyword": "Then "
 });
@@ -59,35 +63,39 @@ formatter.match({
   "location": "LoginStepDefinitionMap.user_is_Present_on_Login_Page()"
 });
 formatter.result({
-  "duration": 9781646404,
+  "duration": 16105160368,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitionMap.title_of_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 16904425,
+  "duration": 20905408,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitionMap.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 749136284,
+  "duration": 635315539,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitionMap.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 7020661628,
+  "duration": 30156276967,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitionMap.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 402126887,
+  "duration": 390852782,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 6673460660,
   "status": "passed"
 });
 });

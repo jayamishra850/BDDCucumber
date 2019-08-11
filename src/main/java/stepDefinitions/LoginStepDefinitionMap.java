@@ -2,12 +2,15 @@ package stepDefinitions;
 
 import java.util.Map;
 
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.DataTable;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -15,12 +18,30 @@ import cucumber.api.java.en.When;
 public class LoginStepDefinitionMap {
 	
 	WebDriver driver;
+	@Before
+	public void setUp()
+	{
+	System.out.println("Lunched browser");
+	}
+	
+	@After
+	public void tearDown()
+	{
+	driver.quit();
+	}
 
+	/*@Before("@First")
+	public void smokeTests()
+	{
+	System.out.println("Smoke Testing Performing");	
+	}*/
+	
 	@Given("^user is on Login Page$")
 	public void user_is_Present_on_Login_Page()
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\frameworks\\Selenium Practice\\chromedriver_win32\\chromedriver.exe");
 	driver=new ChromeDriver();
+	driver.manage().window().maximize();
 	driver.get("https://www.facebook.com/");
 	}
 	

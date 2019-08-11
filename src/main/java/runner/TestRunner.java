@@ -10,8 +10,8 @@ import cucumber.api.junit.Cucumber;
 		glue= {"stepDefinitions"},
 		format= {"pretty","html:test-output"},
 		dryRun= false,
-		monochrome= false,
-		strict= false
+		monochrome= true,
+		strict= true
 		)
 public class TestRunner {
 
