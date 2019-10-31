@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 334839,
+  "duration": 529413,
   "status": "passed"
 });
 formatter.scenario({
@@ -19,17 +19,17 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 6,
+  "line": 5,
   "name": "user is on Login Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 6,
   "name": "title of login page is Facebook",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "user enter username and password",
   "rows": [
     {
@@ -37,25 +37,25 @@ formatter.step({
         "username",
         "password"
       ],
-      "line": 9
+      "line": 8
     },
     {
       "cells": [
         "jayamishra850@gmail.com",
         "Ritu@123456"
       ],
-      "line": 10
+      "line": 9
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
+  "line": 11,
   "name": "user click on login button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "user on home page",
   "keyword": "Then "
 });
@@ -63,39 +63,39 @@ formatter.match({
   "location": "LoginStepDefinitionMap.user_is_Present_on_Login_Page()"
 });
 formatter.result({
-  "duration": 16105160368,
+  "duration": 131103248835,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitionMap.title_of_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 20905408,
+  "duration": 100756573,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitionMap.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 635315539,
+  "duration": 803675787,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitionMap.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 30156276967,
+  "duration": 33648588075,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitionMap.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 390852782,
+  "duration": 299241631,
   "status": "passed"
 });
 formatter.after({
-  "duration": 6673460660,
+  "duration": 951990602,
   "status": "passed"
 });
 });

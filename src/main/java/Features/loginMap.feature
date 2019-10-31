@@ -2,7 +2,6 @@ Feature: Facebook Login Feature
 
 Scenario: Facebook Login Test Scenario
 
-@First
 Given user is on Login Page
 When title of login page is Facebook
 Then user enter username and password

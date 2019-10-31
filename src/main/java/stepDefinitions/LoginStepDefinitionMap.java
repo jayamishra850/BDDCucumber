@@ -39,7 +39,7 @@ public class LoginStepDefinitionMap {
 	@Given("^user is on Login Page$")
 	public void user_is_Present_on_Login_Page()
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\frameworks\\Selenium Practice\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\frameworks\\Selenium Practice\\chromedriver_win32\\ChromeDriver76\\chromedriver.exe");
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("https://www.facebook.com/");
@@ -58,8 +58,8 @@ public class LoginStepDefinitionMap {
 	{
 	  for(Map<String, String> data: credentials.asMaps(String.class, String.class))
 	  {
-		driver.findElement(By.name("email")).sendKeys(data.get("username"));
-	  driver.findElement(By.name("pass")).sendKeys(data.get("password"));
+		driver.findElement(By.cssSelector("#email")).sendKeys(data.get("username"));
+	  driver.findElement(By.cssSelector("#pass")).sendKeys(data.get("password"));
 	  }
 	}
 
